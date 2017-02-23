@@ -1,15 +1,14 @@
 ﻿// site.js
+(function () {
+    var ele = $("#username");
+    ele.innerHTML = "Ollie Badger";
 
-var ele = document.getElementById("username");
-ele.innerHTML = "Ollie Badger";
+    var main = $("#main");
+    main.on("mouseenter", function () {
+        main.style = "background-color: #888;";
+    });
 
-var main = document.getElementById("main");
-main.onmouseenter = function () {
-    main.style.backgroundColor = "#888";
-    
-};
-
-main.onmouseleave = function () {
-    main.style.backgroundColor = "";
-}
-    
+    main.on("mouseleave", function () {
+        main.style = "backgroun-color: '';";
+    }
+})();
